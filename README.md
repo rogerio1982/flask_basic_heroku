@@ -1,19 +1,19 @@
 # flask_basic_heroku
 
-install vituallenv: 
+install vituallenv>> 
 pip install virtualenv
 
-create:
+create>>
 virtualenv mypython
 
-activate:
+activate>>
 cd mypython
 Scripts\activate
 
-intall flask e gunicorn
+intall flask e gunicorn>>
 pip install flask gunicorn
 
-Create an app folder:
+Create an app folder>>
 mkdir app
 cd app
 ####code 
@@ -24,17 +24,17 @@ def index():
   return "<h1>Welcome to CodingX</h1>"
 ####
 
-freeze:
+freeze>>
 pip freeze
 pip3 freeze > requirements.txt
 
-gunicorn:
+gunicorn>>
 web: gunicorn app:app
 
-Create an app in Heroku:
+Create an app in Heroku>>
 acesse e crie uma conta e um app...
 
-Deploy heroku:
+Deploy heroku>>
 heroku login
 git init
 heroku git:remote -a name_server
